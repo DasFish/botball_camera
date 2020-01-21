@@ -19,6 +19,7 @@ int full_check(int c){
     else{return 0;}
 }
 int camera_center(int color){
+    camera_initialize();
     if(full_check(color)==1){
     motor(0,(get_object_center_x(color,0)-80));
     motor(3,(80-(get_object_center_x(color,0))));
